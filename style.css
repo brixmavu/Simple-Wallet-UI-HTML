@@ -1,0 +1,77 @@
+.wallet {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+  }
+  
+  .wallet h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .wallet .balance {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .wallet .balance span {
+    font-weight: bold;
+  }
+  
+  .wallet .transactions {
+    margin-bottom: 20px;
+  }
+  
+  .wallet .transactions h2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .wallet .transactions ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .wallet .transactions li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .wallet .form {
+    margin-bottom: 20px;
+  }
+  
+  .wallet .form h2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .wallet .form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .wallet .form input[type="number"] {
+    padding: 10px;
+    font-size: 1em;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .wallet .form button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .wallet .form button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
