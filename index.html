@@ -1,42 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>My Wallet</title>
+    <link rel="stylesheet" href="./icon.css">
+    <title>UI</title>
 </head>
+
 <body>
-    <div class="wallet">
-  <h1>My Wallet</h1>
-  <div class="balance">
-    <span>Balance:</span>
-    <span id="balance">$0.00</span>
-  </div>
-  <div class="transactions">
-    <h2>Transactions</h2>
-    <ul id="transactions">
-      <!-- transactions will be added here dynamically -->
-    </ul>
-  </div>
-  <div class="form">
-    <h2>Add Funds</h2>
-    <form id="add-funds-form">
-      <label for="add-amount">Amount:</label>
-      <input type="number" id="add-amount" min="0" step="0.01">
-      <button type="submit">Add Funds</button>
-    </form>
-  </div>
-  <div class="form">
-    <h2>Withdraw Funds</h2>
-    <form id="withdraw-funds-form">
-      <label for="withdraw-amount">Amount:</label>
-      <input type="number" id="withdraw-amount" min="0" step="0.01">
-      <button type="submit">Withdraw Funds</button>
-    </form>
-  </div>
-</div>
-<script src="./script.js"></script>
+    <div class="content">
+        <header>
+            <div>My Wallet</div>
+            <div><i class="gg-user"></i></div>
+        </header>
+
+        <div class="balance center">
+            <span>Balance:</span>
+            <span id="balance">$0.00</span>
+        </div>
+
+        <div class="btn-group">
+            <div><button type="button" class="buttonClass credit-amount modalBtn">Add Money</button></div>
+            <div><button type="button" class="buttonClass debit-amount modalBtn">Widthdraw</button></div>
+        </div>
+
+        <div class="modal">
+            <!-- Header -->
+            <div class="modal__header">
+                <!-- Title -->
+                <h2>Add Funds</h2>
+                <!-- Close icon sticks to the right -->
+                <span class="close">×</span>
+            </div>
+
+            <!-- Content -->
+            <form id="add-funds-form">
+                <label for="add-amount">Amount:</label>
+                <input type="number" id="add-amount" min="0" step="0.01">
+                <!-- Footer -->
+                <div class="modal__footer"><button type="submit">Add Funds</button></div>
+            </form>
+        </div>
+
+
+        <div class="modal">
+            <!-- Header -->
+            <div class="modal__header">
+                <!-- Title -->
+                <h2>Withdraw Fund</h2>
+                <!-- Close icon sticks to the right -->
+                <span class="close">×</span>
+            </div>
+
+            <!-- Content -->
+            <form id="withdraw-funds-form">
+                <label for="withdraw-amount">Amount:</label>
+                <input type="number" id="withdraw-amount" min="0" step="0.01">
+                <!-- Footer -->
+                <div class="modal__footer"><button type="submit">Withdraw Fund</button></div>
+            </form>
+        </div>
+
+
+
+        <div class="container">
+            <div class="transactions">
+                <h3>Transactions</h3>
+                <ul id="transactions">
+                    <!-- transactions will be added here dynamically -->
+                  </ul>
+                <!-- <p class="txn-list">Payment to xyz shop<span class="debit-amount">-$100</span></p>
+
+                <p class="txn-list">Payment to abc shop<span class="debit-amount">-$150</span></p>
+
+                <p class="txn-list">Credit From abc ltd<span class="credit-amount">+$300</span></p>
+
+                <p class="txn-list">Transfer From John Doe<span class="credit-amount">+$100</span></p> -->
+            </div>
+        </div>
+    </div>
+
+    <footer class="app-footer">
+        <ul>
+            <li>
+                <i class="gg-home-alt"></i>
+                Home
+            </li>
+            <li>
+                <i class="gg-inbox"></i>
+                Inbox
+            </li>
+            <li>
+                <i class="gg-dollar"></i>
+                Bank
+            </li>
+            <li>
+                <i class="gg-scan"></i>
+                Scan
+            </li>
+        </ul>
+    </footer>
+    <script src="./script.js"></script>
 </body>
+
 </html>
