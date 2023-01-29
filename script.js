@@ -4,9 +4,11 @@ var modal = document.getElementsByClassName('modal');
 // Get the button that opens the modal
 var btn = document.getElementsByClassName("modalBtn");
 
-
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close");
+
+// // Get all the submit button elements with the class name "submit-button"
+// const submitButton = document.getElementsByClassName("submit-button");
 
 // When the user clicks the button, open the modal 
 btn[0].onclick = function () {
@@ -33,6 +35,11 @@ window.onclick = function (event) {
         modal[1].style.display = "none";
     }
 }
+
+// Get all the modal elements with the class name "modal"
+// const modals = document.getElementsByClassName("modal");
+
+
 
 
 // Initialize variables for balance and transaction history
@@ -98,3 +105,14 @@ document.getElementById("withdraw-funds-form").addEventListener("submit", functi
   let amount = document.getElementById("withdraw-amount").value;
   withdrawFunds(Number(amount));
 });
+
+// // Add a click event listener to the submit button
+// submitButton.addEventListener("click", function() {
+//   // Prevent the form's default behavior
+//   // event.preventDefault();
+//   // Loop through all the modal elements
+//   for (let i = 0; i < modal.length; i++) {
+//     // Close the modal
+//     modal[i].style.display = "none";
+//   }
+// });
