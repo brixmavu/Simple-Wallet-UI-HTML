@@ -79,6 +79,7 @@ function updateTransactionHistory() {
   for (let i = 0; i < transactionHistory.length; i++) {
     let transaction = transactionHistory[i];
     let transactionElement = document.createElement("li");
+    transactionElement.className = 'txn-list'
     let transactionText = document.createTextNode(transaction.type + " - $" + transaction.amount.toFixed(2));
     transactionElement.appendChild(transactionText);
     transactionList.appendChild(transactionElement);
